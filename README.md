@@ -15,7 +15,21 @@
 - update profile
 - Bugfix:Sign Up user displayName and profile picture update
 - Bugfix:if the user not logged in redirected to login Page and vice-versa
--Unsubscribed to the onAuthStateChanged callback
+- Unsubscribed to the onAuthStateChanged callback
+- Add hardcoded values to the constants file
+- Register tmdb API and create an app & get acess token
+- get Data from tmdb now playing movies list API
+- custom hook for Nowplaying movies
+- create movieSlice
+- Update store with movies data
+- planning for mainContainer & secondary container
+- fetch data for trailer video
+- update store with trailer video data
+- Embedded the youtube video make it auotplay &mute
+- Tailwind Classes to make main container look awesome
+
+
+
 
 # Features
 - Login/Sign up Form

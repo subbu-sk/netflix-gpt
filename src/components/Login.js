@@ -60,7 +60,7 @@ if(!isSignInForm){
     const errorCode = error.code;
     const errorMessage = error.message;
      setErrorMessage(error+"-"+errorMessage)
-     console.log(error+"-"+errorMessage)
+     
   });
   }
 
