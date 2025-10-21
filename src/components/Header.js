@@ -50,20 +50,20 @@ const handleGptSearchClick =()=>{
 
 
   return (
-    <div className='w-screen justify-between flex absolute px-8 py-2 bg-gradient-to-b from-black z-10'>
+    <div className='w-screen justify-between flex flex-col md:flex-row absolute px-8 py-2 bg-gradient-to-b from-black z-10'>
         <img 
-        className='w-40 '
+        className='w-40 mx-auto md:mx-0'
         src={LOGO} alt='netflixlogo'/>
 
      {user && 
-     (<div className='flex items-center '>
+     (<div className='flex p-2 justify-between'>
       {showGptSearch &&
        <select className='p-2 bg-gray-900 text-white'onChange={handleLanguageChange}>
         {SUPPORTED_LANGUAGES.map(lang=><option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
       </select>}
 
       <button className='py-2 px-4 mx-4 my-2 bg-purple-800 text-white rounded-lg' onClick={handleGptSearchClick}>{showGptSearch ?  "Homepage" : "Gpt Search" }</button>
-        <img className="w-8 h-8 m-2" alt="usericon" src={user?.photoURL}/>
+        <img className="hidden md:block w-8 h-8 m-2" alt="usericon" src={user?.photoURL}/>
         <button onClick={handleSignOut} className='text-white m-2 cursor-pointer'>Sign Out</button>
       </div>)}
     </div>
